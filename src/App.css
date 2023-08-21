@@ -1,0 +1,134 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Karla;
+  background: #F5F7FB;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container > div {
+  text-align: center;
+} 
+.container h2 {
+  color: #293264;
+  font-size: 31.25px;
+  margin-bottom: 30px;
+}
+.container button {
+  border-radius: 15px;
+  background: #4D5B9E;
+  padding: 15px 40px;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+.container form {
+  height: 90%;
+  width: 90%;
+}
+.container form .question-card{
+  padding: 15px;
+}
+hr {
+  clear: both;
+}
+.container .question-card h3{
+  margin-bottom: 16px;
+  color: #293264;
+}
+.choice {
+  float: left;
+  margin: 0 15px 10px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  text-align: center;
+  
+}
+
+.choice label,
+.choice input {
+  display: block;
+  padding: 10px;
+}
+.choice label {
+  border: 2px solid #4D5B9E;
+  border-radius: 5px;
+}
+.choice input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.choice input[type="radio"]:checked + label {
+  background: #20b8be;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.choice label {
+  cursor: pointer;
+  z-index: 90;
+  line-height: 1.8em;
+}
+
+.result {
+  margin: 20px 0;
+  color: #293264;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container > div > h3 , .container > div > div{
+  margin-bottom: 20px;
+}
