@@ -2,6 +2,7 @@
 /* esdivnt-disable no-unused-vars */
 import React from 'react'
 import Question from './Question';
+import swal from 'sweetalert';
 
 function Quiz() {
     const [questionsData, setQuestionsData] = React.useState();
@@ -36,7 +37,10 @@ function Quiz() {
         e.preventDefault();
 
         if(Object.keys(answers).length !== 5 ) {
-            console.log("answer all questions")
+            swal({
+                title: "You should answer all question" ,
+                icon: "info"
+            })
         }else{
             setStatus("formSubmitted")
             for(let question in answers){
